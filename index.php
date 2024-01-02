@@ -1,19 +1,55 @@
-<?php
-print "Jai shree Ram <br> hello world";
-echo "happy new year";
+<!DOCTYPE html>
+<html lang="en">
 
-#first comment
-//second way to comment
-/* multi line comment
-here we can 
-comment more than 
-one line */
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
-print "<h2>PHP is Fun!</h2><br>";
-echo "<h2>PHP is Fun!</h2>";
+<body>
+    <?php
+    $name = "Shubham";
+    ?>
 
-echo "This ", "string ", "was ", "made ", "with multiple parameters.";
-//print "This ", "string ", "was ", "made ", "with multiple parameters.";
+    <p>hello this is
+        <?php echo $name; ?>
+    </p>
 
-/* While print and echo both serve similar purposes, echo is more commonly used in PHP, and the two can often be used interchangeably. However, it's worth noting that echo is marginally faster and generally more preferred in PHP code. */
-?>
+    <h2>
+        <?php
+        for ($i = 0; $i < 5; $i++) {
+            echo add(2, $i) . "<br>";
+        }
+        ?>
+    </h2>
+
+    <?php
+
+    function add($a, $b)
+    {
+        return $a + $b;
+    }
+
+    print "Jai shree Ram <br> hello world";
+    echo "happy new year";
+
+    #first comment
+    //second way to comment
+    /* multi line comment
+    here we can 
+    comment more than 
+    one line */
+
+    print "<h2>PHP is Fun!</h2><br>";
+    echo "<h2>PHP is  Fun!</h2>\n\n", "sd", "\n";
+
+    echo "<br>", "This ", "string ", "was ", "made ", "with multiple parameters.";
+    //print "This ", "string ", "was ", "made ", "with multiple parameters.";
+    echo phpversion();
+
+    /* While print and echo both serve similar purposes, echo is more commonly used in PHP, and the two can often be used interchangeably. However, it's worth noting that echo is marginally faster and generally more preferred in PHP code. */
+    ?>
+</body>
+
+</html>
