@@ -48,6 +48,16 @@
     //print "This ", "string ", "was ", "made ", "with multiple parameters.";
     echo phpversion();
 
+    <?php
+ $a=45;
+  echo ("some value second value "),("$a");
+ 
+ ?>
+  <?php
+echo "PHP Version: " . phpversion();
+?>
+
+
     /* While print and echo both serve similar purposes, echo is more commonly used in PHP, and the two can often be used interchangeably. However, it's worth noting that echo is marginally faster and generally more preferred in PHP code. */
     ?>
 </body>
