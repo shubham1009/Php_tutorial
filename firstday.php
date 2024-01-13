@@ -6,7 +6,7 @@ var_dump($colors);
 
 foreach ($colors as &$x) {
   if ($x == "blue") $x = "pink";
-  echo &$x."";
+  echo $x."";
 }
 
 var_dump($colors);
