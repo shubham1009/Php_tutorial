@@ -48,8 +48,9 @@
     //print "This ", "string ", "was ", "made ", "with multiple parameters.";
     echo phpversion();
 
-    <?php
- $a=45;
+ 
+ 
+  $a=45;
   echo ("some value second value "),("$a");
  
  ?>
