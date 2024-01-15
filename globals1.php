@@ -14,9 +14,13 @@ $_SESSION['global_variable'] = "Hello from session!";
 ?>
 <?php
 // Set a global variable using $GLOBALS
-$_GLOBALS['a'] = "Hello from GLOBALS!";
-echo "hello";
+$a= "Hello from GLOBALS!";
+$GLOBALS['a'] ;
+echo "global variable  is set successfully".$a;
+
 ?>
+
+
 
 <a href="globals2.php" target="_blank">Go to Page 2</a>  
 

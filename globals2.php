@@ -23,7 +23,7 @@ if (isset($GLOBALS['a']))
     echo "<p>" . $GLOBALS['a'] . "</p>";
 }
 else {
-    echo "<p>Global variable not set.</p>".$GLOBALS['a'];
+    echo "<p>Global variable not set.</p>" ;
 }
 ?>
 
