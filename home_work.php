@@ -21,8 +21,8 @@ echo "<br>";
 echo FILTER_VALIDATE_URL;
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validate Name
-   # $name = test_input($_POST["name"]);
-    $name =  ($_POST["name"]);
+  $name = test_input($_POST["name"]);
+  #  $name =  ($_POST["name"]);
     if (empty($name)) {
         $nameErr = "Name is required";
     }else{

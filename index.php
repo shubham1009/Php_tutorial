@@ -1,66 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+ $a="9616371009";
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+ if(strlen($a)==10)
+ {
+    echo "yes it is 10 digit<br>";
 
-<body>
-    <?php
-    $name = "Shubham";
-    ?>
-
-    <p>hello this is
-        <?php echo $name; ?>
-    </p>
-
-    <h2>
-        <?php
-        for ($i = 0; $i < 5; $i++) {
-            echo add(2, $i) . "<br>";
-        }
-        ?>
-    </h2>
-
-    <?php
-
-    function add($a, $b)
+    if(ctype_digit($a)){
+        echo "valid phone number <br>";
+    }else
     {
-        return $a + $b;
+        echo "not a valid number <br>";
     }
-
-    print "Jai shree Ram <br> hello world";
-    echo "happy new year";
-
-    #first comment
-    //second way to comment
-    /* multi line comment
-    here we can 
-    comment more than 
-    one line */
-
-    print "<h2>PHP is Fun!</h2><br>";
-    echo "<h2>PHP is  Fun!</h2>\n\n", "sd", "\n";
-
-    echo "<br>", "This ", "string ", "was ", "made ", "with multiple parameters.";
-    //print "This ", "string ", "was ", "made ", "with multiple parameters.";
-    echo phpversion();
-
  
- 
-  $a=45;
-  echo ("some value second value "),("$a");
- 
- ?>
-  <?php
-echo "PHP Version: " . phpversion();
+ }
+ else{
+    echo "no <br>";
+ }
+
+ $email="someone@gmail.com";
+// Check if the character is present in the string
+if (strpos($email,"z")=== false) {
+    echo "The character '$email' is not present in the string.\n";
+} else {
+    echo "The character '$email' is present in the string.\n";
+}
+
+/**The use of !== is important in this context to perform a strict comparison. In PHP, the strpos() function returns false when the substring is not found in the string.
+
+If you were to use != for comparison, it might lead to unexpected results because false could be loosely equal to 0 or an empty string in PHP. Using !== ensures that not only the values are equal but also that their types are identical. */
 ?>
-
-
-    /* While print and echo both serve similar purposes, echo is more commonly used in PHP, and the two can often be used interchangeably. However, it's worth noting that echo is marginally faster and generally more preferred in PHP code. */
-    ?>
-</body>
-
-</html>
