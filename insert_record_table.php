@@ -1,10 +1,9 @@
 <?php
-
 // Connecting to the Database
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "dbharry";
+$database = "dbshubham";
 
 // Create a connection
 $conn = mysqli_connect($servername, $username, $password, $database);
@@ -17,8 +16,8 @@ else{
 }
 
 // Variables to be inserted into the table
-$name = "Vikrant";
-$destination = "Russia";
+$name = "shubham";
+$destination = "varanasi";
 
 // Sql query to be executed
 $sql = "INSERT INTO `phptrip` (`name`, `dest`) VALUES ('$name', '$destination')";

@@ -8,14 +8,24 @@ $result = mysqli_query($conn, $sql);
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD Application</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <h2>Notes</h2>
+
+    <form action="search.php" method="GET" onsubmit="return validateForm()">
+        <label for="search">Search here:</label>
+        <input type="text" name="search" id="search" placeholder="Enter search term" !important>
+        <button type="submit">Search</button>
+    </form>
+
+
 
     <table border="1">
         <tr>
@@ -41,5 +51,20 @@ $result = mysqli_query($conn, $sql);
     <br>
 
     <a href="create.php">Add New Note</a>
+
+    <script>
+
+        function validateForm() {
+            var searchTerm = document.getElementById('search').value.trim();
+
+            if (searchTerm === '') {
+                alert('Please enter a search term.');
+                return false; // Prevent form submission
+            }
+
+            return true; // Allow form submission
+        }
+    </script>
 </body>
+
 </html>

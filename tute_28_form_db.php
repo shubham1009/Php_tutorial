@@ -57,7 +57,7 @@
       $servername = "localhost";
       $username = "root";
       $password = "";
-      $database = "dbharry";
+      $database = "dbshubham";
 
       // Create a connection
       $conn = mysqli_connect($servername, $username, $password, $database);
@@ -82,7 +82,7 @@
         else{
             // echo "The record was not inserted successfully because of this error ---> ". mysqli_error($conn);
             echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-          <strong>Error!</strong> We are facing some technical issue and your entry ws not submitted successfully! We regret the inconvinience caused!
+          <strong>Error!</strong> We are facing some technical issue and your entry ws not submitted successfully! We regret the inconvinience caused! '. mysqli_error($conn).'
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
