@@ -1,4 +1,5 @@
 <?php
+echo "Current version is PHP " . phpversion();
  $a="9616371009";
 
  if(strlen($a)==10)
