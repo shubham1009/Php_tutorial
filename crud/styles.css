@@ -4,56 +4,7 @@ body {
     margin-right: 20%;
 }
 
-form > body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    margin: auto;
-    padding: auto; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-form {
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 5px;
-    display: flex; /* Use flexbox for the form */
-}
-
-label {
-    display: block;
-    font-size: 18px;
-    margin-bottom: 10px;
-    
-}
-
-input {
-    flex: 1; /* Take up remaining space */
-    padding: 10px;
-    font-size: 16px;
-    margin-right: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
+ 
 h2 {
     color: #333;
 }

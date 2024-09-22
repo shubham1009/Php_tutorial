@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "dbharry";
+$database = "dbshubham";
 
 // Create a connection
 $conn = mysqli_connect($servername, $username, $password, $database);
@@ -17,8 +17,9 @@ else{
 }
 
 
-$sql = "DELETE FROM `phptrip` WHERE `sno` = '4' LIMIT 1";
+$sql = "DELETE FROM `phptrip` WHERE `sr` = '4'";
 $result = mysqli_query($conn, $sql);
+
 $aff = mysqli_affected_rows($conn);
 echo "<br>Number of affected rows: $aff <br>";
 
